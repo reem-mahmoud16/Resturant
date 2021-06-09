@@ -89,15 +89,53 @@
                     font-size: 3vw;
                 }
             }
-            
-            
         </style>
+
+        <script>
+            function validate(){
+                var pw = document.getElementById("pass").value;
+                if(pw.length != 8)
+                {
+                    alert("Password must be exactly 8 characters!");
+                    return false;
+                }
+                if(pw.charCodeAt(0) < 65 || pw.charCodeAt(0) > 90)
+                {
+                    alert("Password must start with a capital letter!");
+                    return false;
+                }
+                for(var i=0; i<=7; i++)
+                {
+                    if(pw.charAt(i)==' ')
+                    {
+                        alert("Password cannot have space character!");
+                        return false;
+                    }
+                }
+                
+                var digit = false;
+                for(var i=0; i<=7; i++)
+                {
+                    if(pw.charCodeAt(i)>48 && pw.charCodeAt(i)<57)
+                    {
+                        digit=true;
+                        break;
+                    }
+                    if(i==7 && digit==false){
+                        alert("Password must contain at least one digit!");
+                    }
+                }
+                return digit;
+               
+            }
+            
+        </script>
     </head>
     <body>
         <p class="h">Register</p>
 
         <div>
-            <form action="project.html" method="post" target="_parent">
+            <form action="project.html" method="post" target="_parent" onsubmit="return validate()">
                 <label for="fname"><b>First name</b></label>
                 <input type="text" name="fname" id="fname" required>
 
@@ -107,11 +145,8 @@
                 <label for="email"><b>E-mail</b></label>
                 <input type="email" name="email" id="email" required>
 
-                <label for="phone"><b>Phone number</b></label>
-                <input type="tel" name="phone" id="phone" pattern="[0-9]{11}" required>
-
-                <label for="add"><b>Adress</b></label>
-                <input type="text" name="add" id="add" required>
+                <label for="pass"><b>password</b></label>
+                <input type="password" name="pass" id="pass" required>
 
                 <label for="gen"><b>Gender</b></label>
                 <select id="gen" name="gen">
