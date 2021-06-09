@@ -1,0 +1,206 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                background-image: url(1.jpg);
+                background-size: cover;
+                background-position: center;
+                margin:0;
+                padding:0;
+                letter-spacing: 2px;
+                font-family: fantasy;
+            }
+            
+            .navbar{
+                background-color: rgb(214, 65, 6);
+            }
+            .navbar a{
+                font-size: 2vw;
+                width: 20%;
+                display: inline-block;
+                text-decoration: none;
+                text-align: center;
+                color: white;
+                padding: 10px;
+            }
+            .navbar a:hover, .navbar a:active{
+                background-color: rgb(236, 142, 105);
+            }
+            .drop{
+                width: 20%;
+                float: left;
+                overflow: hidden;
+            }
+            .dropbtn{
+                font-size: 2vw;
+                text-align: center;
+                color: white;
+                padding: 10px;
+                margin: 0;
+            }
+            .dropcon{
+                display: none;
+            }
+            .drop a{
+                background-color: white;
+                color: black;
+                width: 100%;
+            }
+            .drop:hover .dropcon{
+                display: block;
+            }
+            .drop:hover .dropbtn{
+                background-color: rgb(236, 142, 105);
+            }
+            div.f{
+                width: 50%;
+                background-color: rgba(146, 142, 134, 0.5);
+                border-radius: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                border-left: white solid 6px;
+                border-bottom: white solid 6px;
+                text-align: center;
+                padding-top: 15px;
+                margin-bottom: 25px;
+            }
+            input, select{
+                background-color: rgba(245, 222, 178,0.6);
+                display: block;
+                border: none;
+                border-radius: 10px;
+                padding: 8px;
+                margin: 15px;
+                width: 40%;
+                border-left: white solid 5px;
+                border-bottom: white solid 3px;
+                outline: none;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            input[type=radio]{
+                display: inline;
+                margin: 30px;
+                padding: 3px;
+                width: auto;
+                color: white;
+            }
+            input:focus , select:focus{
+                background-color: rgba(245, 222, 178,0.9);
+            }
+            label{
+                font-size: 1.5vw;
+                display: inline-block;
+                color: white;
+            }
+            #submit{
+                width: 25%;
+                margin-top: 30px;
+                background-color: rgb(214, 65, 6);
+                border-radius: 5px;
+                margin-left: auto;
+                margin-right: auto;
+                border: none;
+                color: white;
+                font-size: 1.5vw;
+                box-shadow: rgb(39, 39, 39) 0px 4px 5px;
+            }
+            #submit:focus, #submit:hover{
+                background-color: rgb(236, 142, 105);
+            }
+            h1{
+                color: white;
+                border-left: white solid 5px;
+                border-bottom:white solid 5px;
+                border-radius: 40px;
+                width: 70%;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 15px;
+                font-size: 2vw;
+                background-color: rgba(245, 222, 178,0.4);
+                padding: 8px;
+            }
+            #text{
+                height: 150px;
+            }
+
+            @media screen and (max-width:600px) {
+                
+                .h{
+                    font-size: 8vw;
+                }
+                div.f{
+                    width: 80%;
+
+                }
+                input{
+                    width: 75%;
+                }
+                label{
+                    font-size: 4vw;
+                }
+                #submit{
+                    font-size: 3vw;
+                }
+                h1{
+                    font-size: 4vw;
+                }
+                li a{
+                    font-size: 3vw;
+                }
+                h2{
+                    font-size: 3vw;
+
+                }
+                .navbar a, .dropbtn{
+                    font-size: 4vw;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+
+        <div class="navbar">
+            <div class="drop">
+                <p class="dropbtn">Menu</p>
+                <div class="dropcon">
+                    <a href="burgers.html" target="_parent">Burgers</a> <br>
+                    <a href="dessert.html" target="_parent">Desserts</a> <br>
+                    <a href="Juices.html" target="_parent">Drinks</a>
+                </div>
+            </div>
+            <a href="Apply.html" target="_parent">Apply for a jop</a>
+            <a href="makeorder.html" target="_parent">Make an order</a>
+            <a href="about.html" target="_parent">About</a>
+        </div>
+
+        <h1 style="margin-top: 100px;">Choose your order</h1>
+        <div class="f">
+            <form>
+                <form action="ordersent.html" target="_parent">
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" name="name" id="name" required>
+
+                    <label for="phone"><b>Phone number</b></label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{11}" required>
+
+                    <label for="add"><b>Adress</b></label>
+                    <input type="text" name="add" id="add" required>
+
+                    <label for="gen"><b>Write your order:</b></label>
+                    <input type="text" id="text" name="text" required><br>
+                    
+
+                    <input type="submit" name="submit" id="submit" value="Submit">
+
+                </form>
+        </div>
+        
+    </body>
+</html>
