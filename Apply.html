@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                background-image: url(1.jpg);
+                background-size: cover;
+                background-position: center;
+                margin: 0;
+                padding: 0;
+                font-family: fantasy;
+                letter-spacing: 2px;
+            }
+            
+            .back{
+                background-color: rgba(248, 221, 166, 0.6); 
+                width: 60%;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 60px;
+                border-radius: 10px;
+                text-align: center;
+                color: white;
+                padding: 20px;
+            }
+            
+            .navbar{
+                background-color: rgb(214, 65, 6);
+            }
+            .navbar a{
+                font-size: 2vw;
+                width: 20%;
+                display: inline-block;
+                text-decoration: none;
+                text-align: center;
+                color: white;
+                padding: 10px;
+            }
+            .navbar a:hover, .navbar a:active{
+                background-color: rgb(236, 142, 105);
+            }
+            .drop{
+                width: 20%;
+                float: left;
+                overflow: hidden;
+            }
+            .dropbtn{
+                font-size: 2vw;
+                text-align: center;
+                color: white;
+                padding: 10px;
+                margin: 0;
+            }
+            .dropcon{
+                display: none;
+            }
+            .drop a{
+                background-color: white;
+                color: black;
+                width: 100%;
+            }
+            .drop:hover .dropcon{
+                display: block;
+            }
+            .drop:hover .dropbtn{
+                background-color: rgb(236, 142, 105);
+            }
+            
+
+            table{
+                border-collapse: collapse;
+                border: none;
+                color: black;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 4%;
+                text-align: center;
+                font-size: 2vw;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                line-height: 40px;
+            }
+            td,tr{
+                border: white solid 2px;
+                padding: 15px;
+            }
+            th{
+                background-color: rgb(224, 106, 59);
+                padding: 15px;
+            }
+            td:nth-child(odd) {
+            background-color: rgb(224, 106, 59);
+            }
+            td:nth-child(even) {
+            background-color: white;
+            }
+            .click{
+                text-align: center;
+                color: white;
+                text-decoration: none;
+                font-size: 3vw;
+            }
+            .click:hover, .click:active{
+                color: rgb(250, 216, 202);
+            }
+
+            @media screen and (max-width:600px) {
+                
+                .navbar a, .dropbtn{
+                    font-size: 4vw;
+                }
+                table{
+                    font-size: 3vw;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="drop">
+                <p class="dropbtn">Menu</p>
+                <div class="dropcon">
+                    <a href="burgers.html" target="_parent">Burgers</a> <br>
+                    <a href="dessert.html" target="_parent">Desserts</a> <br>
+                    <a href="Juices.html" target="_parent">Drinks</a>
+                </div>
+            </div>
+            <a href="Apply.html" target="_parent">Apply for a jop</a>
+            <a href="makeorder.html" target="_parent">Make an order</a>
+            <a href="about.html" target="_parent">About</a>
+        </div>
+        <div class="back">
+            <table>
+                <tr>
+                    <th colspan="2">Jop Requirements</th>
+                </tr>
+
+                <tr>
+                    <td>Age</td>
+                    <td>More than 25 years.</td>
+                </tr>
+
+                <tr>
+                    <td>Years of work experience</td>
+                    <td>0 years needed.</td>
+                </tr>
+
+                <tr>
+                    <td>Education</td>
+                    <td>Student or graduee.</td>
+                </tr>
+
+                <tr>
+                    <td>Soft skills</td>
+                    <td>
+                        <ul style="list-style-type: none;text-align: left;">
+                            <li>Hard Work</li>
+                            <li>Time Management</li>
+                            <li>Team Work</li>
+                            <li>Adaptability</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+            <a href="job.html" target="_parent" class="click">Click here to apply!</a>
+        </div>
+    </body>
+</html>
