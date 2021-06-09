@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                background-image: url(1.jpg);
+                background-size: cover;
+                background-position: center;
+                margin: 0;
+                padding: 0;
+                font-family: fantasy;
+                letter-spacing: 2px;
+            }
+            .navbar{
+                background-color: rgb(214, 65, 6);
+            }
+            .navbar a{
+                font-size: 2vw;
+                width: 20%;
+                display: inline-block;
+                text-decoration: none;
+                text-align: center;
+                color: white;
+                padding: 10px;
+            }
+            .navbar a:hover, .navbar a:active{
+                background-color: rgb(236, 142, 105);
+            }
+            .drop{
+                width: 20%;
+                float: left;
+                overflow: hidden;
+            }
+            .dropbtn{
+                font-size: 2vw;
+                text-align: center;
+                color: white;
+                padding: 10px;
+                margin: 0;
+            }
+            .dropcon{
+                display: none;
+            }
+            .drop a{
+                background-color: white;
+                color: black;
+                width: 100%;
+            }
+            .drop:hover .dropcon{
+                display: block;
+            }
+            .drop:hover .dropbtn{
+                background-color: rgb(236, 142, 105);
+            }
+            .flex{
+                display: flex;
+                flex-direction: row;
+                background-color: rgba(248, 221, 166, 0.5); 
+                width: 90%;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 15px;
+                flex-wrap: wrap;
+                border-radius: 10px;
+            }
+            .imgal{
+                flex:15%;
+                background-color: rgb(214, 65, 6);
+                margin: 25px;
+                height: auto;
+                box-shadow: rgb(39, 39, 39) 4px 4px 10px;  
+                border-top-left-radius:50% ;
+                border-bottom-right-radius:10%;
+            }
+            .imgal:hover{
+                transform: scale(1.05,1.05);
+            }
+            .imgal img{
+                width: 100%;
+                border-top-left-radius:50% ;
+                border-bottom-right-radius:10%;
+                height: 400px;
+            }
+
+            div p{
+                text-align: center;
+                font-size: 2vw;
+                color: white;
+                line-height: 45px;
+            }
+           
+            h1{
+                text-align: center;
+                color: white;
+                background-color: rgb(214, 65, 6);
+                border-radius: 10px;
+                margin-top: 4%;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 3vw; 
+                width: 25%;
+                border: white solid 3px;
+            }
+            @media screen and (max-width:600px) {
+                
+                .navbar a, .dropbtn{
+                    font-size: 4vw;
+                }
+                .flex{
+                    flex-direction: column;
+                    width: 80%;
+                }
+                .imgal{
+                    flex: 100%;
+                    height: 20px;
+                }
+                div p{
+                    font-size: 5vw;
+                }
+                .nava a{
+                    font-size: 3vw;
+                }
+                h1{
+                    font-size: 7vw;
+                    margin-top: 15%;
+                    width: 35%;
+                }
+            }  
+
+           
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="drop">
+                <p class="dropbtn">Menu</p>
+                <div class="dropcon">
+                    <a href="burgers.html" target="_parent">Burgers</a> <br>
+                    <a href="dessert.html" target="_parent">Desserts</a> <br>
+                    <a href="Juices.html" target="_parent">Drinks</a>
+                </div>
+            </div>
+            <a href="Apply.html" target="_parent">Apply for a jop</a>
+            <a href="makeorder.html" target="_parent">Make an order</a>
+            <a href="about.html" target="_parent">About</a>
+        </div>
+
+    <h1>Drinks</h1>
+    <div class="flex">
+        <div class="imgal">
+            <img src="coffee.jpg">
+            <p>Ice coffee <br> 20 L.E</p>
+        </div>
+
+        <div class="imgal">
+            <img src="oreo.jpg">
+            <p>Oreo Milkshake <br> 20 L.E</p>
+        </div>
+
+        <div class="imgal">
+            <img src="straw.jpg">
+            <p>Strawberry Milkshake <br> 15 L.E</p>
+        </div>
+
+        <div class="imgal">
+            <img src="lemon.jpg">
+            <p>Lemon juice <br> 10 L.E</p>
+        </div>
+    </div>
+
+    
+
+    </body>
+</html>
