@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                background-image: url(1.jpg);
+                background-size: cover;
+                background-position: center;
+                margin: 0;
+                padding: 0;
+                font-family: fantasy;
+                letter-spacing: 2px;
+            }
+            
+            .back{
+                background-color: rgba(248, 221, 166, 0.3); 
+                width: 90%;
+                height: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 13%;
+                border-radius: 10px;
+                text-align: center;
+                color: white;
+            }
+            
+            .navbar{
+                background-color: rgb(214, 65, 6);
+            }
+            .navbar a{
+                font-size: 2vw;
+                width: 20%;
+                display: inline-block;
+                text-decoration: none;
+                text-align: center;
+                color: white;
+                padding: 10px;
+            }
+            .navbar a:hover, .navbar a:active{
+                background-color: rgb(236, 142, 105);
+            }
+            .drop{
+                width: 20%;
+                float: left;
+                overflow: hidden;
+            }
+            .dropbtn{
+                font-size: 2vw;
+                text-align: center;
+                color: white;
+                padding: 10px;
+                margin: 0;
+            }
+            .dropcon{
+                display: none;
+            }
+            .drop a{
+                background-color: white;
+                color: black;
+                width: 100%;
+            }
+            .drop:hover .dropcon{
+                display: block;
+            }
+            .drop:hover .dropbtn{
+                background-color: rgb(236, 142, 105);
+            }
+            @media screen and (max-width:600px) {
+                
+                .navbar a, .dropbtn{
+                    font-size: 4vw;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="drop">
+                <p class="dropbtn">Menu</p>
+                <div class="dropcon">
+                    <a href="burgers.html" target="_parent">Burgers</a> <br>
+                    <a href="dessert.html" target="_parent">Desserts</a> <br>
+                    <a href="Juices.html" target="_parent">Drinks</a>
+                </div>
+            </div>
+            <a href="Apply.html" target="_parent">Apply for a jop</a>
+            <a href="makeorder.html" target="_parent">Make an order</a>
+            <a href="about.html" target="_parent">About</a>
+        </div>
+
+        <div class="back">
+            <p style="font-family:'Brush Script MT', cursive;font-size: 12vw;margin: 0px;line-height: 130px;">Welcome</p>
+            <p style="font-family: 'Arial Narrow Bold', sans-serif;margin: 0px;">MEET, EAT &ENJOY THE TRUE RESTURANT!</p>
+
+        </div>
+
+    </body>
+</html>
